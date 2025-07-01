@@ -7,25 +7,6 @@
 <body>
     <h1>Videos & Audios Collection</h1>
     <audio src="https://github.com/ggjk26/ggjk26.github.io/blob/main/gllcygm-ycyx.mp3" id="aud" autoplay="autoplay" controls="controls" preload="auto"></audio>
-    <script>
-const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-let audioBuffer;
-
-// 加载音频
-fetch('https://github.com/ggjk26/ggjk26.github.io/edit/main/gllcygm-ycyx.mp3')
-  .then(response => response.arrayBuffer())
-  .then(data => audioCtx.decodeAudioData(data))
-  .then(buffer => {
-    audioBuffer = buffer;
-  });
-
-function play() {
-  const source = audioCtx.createBufferSource();
-  source.buffer = audioBuffer;
-  source.connect(audioCtx.destination);
-  source.start();
-}
-</script>
     <iframe src="https://store.steampowered.com/widget/2873080/" frameborder="0" width="646" height="190"></iframe>;
 </body>
 </html>
